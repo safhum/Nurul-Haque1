@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <style>
+    .container {
+        position: relative;
+        width: 50%;
+    }
+
+    .image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #4CAF50;
+    }
+
+    .container:hover .overlay {
+        opacity: 1;
+    }
+
+    .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    </style>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <p style="text-align: center;font-size:25px;
+    color:green"><b><i>Practice Session </i></b></p><br>
+    <p>This is something amazing</p><br>
+    <p>We are doing the excercise</p><br>
+    <p style="
+    text-align: right;
+">Our project work is going on</p>
+    <img src="./Images/1.jpg" alt="" style="
+    height: 250px;
+    width: 260px;
+">
+    <div class="container">
+        <img src="./Images/2.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="text">Hello World</div>
+        </div>
+    </div>
+</body>
+
+</html>
